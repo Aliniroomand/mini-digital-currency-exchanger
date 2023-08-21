@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    font-size: 12px;
+    color: #212529;
+    border-bottom: 1px solid silver;
+    font-size: 1rem;
+}
+
+.container:last-child {
+    border: none;
+}
+
+.image {
+      border-right: 2px solid #fbc12d ;
+      padding-inline: 5px;
+    width: 30px;
+  }
+  
+  .name {
+    width: 140px;
+    font-size: 14xp;
+    margin-left: 15px;
+    text-align: left;
+    font-weight: bold;
+    color: #fbc12d;
+    border-right: 2px solid #fbc12d ;
+    padding-inline: 5px;
+  }
+  
+  .symbol {
+    text-align: left;
+    width: 100px;
+    color: #fbc12d;
+    border-right: 2px solid #fbc12d ;
+    padding-inline: 5px;
+  }
+  
+  .currentPrice {
+    text-align: left;
+    width: 100px;
+    color: #fbc12d;
+    border-right: 2px solid #fbc12d ;
+    padding-inline: 5px;
+  }
+  
+  .greenPriceChange,
+  .redPriceChange {
+    width: 100px;
+    text-align: left;
+    font-weight: bold;
+    border-right: 2px solid #fbc12d ;
+    padding-inline: 5px;
+}
+  
+  .redPriceChange {
+    color: rgb(255, 38, 38);
+  }
+  
+  .greenPriceChange {
+    color: rgb(0, 204, 0);
+  }
+  
+  .marketCap{
+    color: #fbc12d;
+    background: #2c2c2c79;
+
+  }
+@media (width<900px){
+    .container{
+        background: #ffffff3f;
+        border-radius: 30px;
+        backdrop-filter:blur(1px) ;
+    }
+
+
+}
