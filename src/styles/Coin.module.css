@@ -1,5 +1,14 @@
 .container {
-  line-height: 7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  margin-bottom: 10px;
+background: #dad5d53f;
+backdrop-filter: blur(2px);
+width: 100%;
+padding:20px;
+border-radius: 30px;
   
 }
 .titles{
@@ -30,77 +39,34 @@ z-index: 2;
     font-weight:900;
     color: #800000;
     position: absolute;
+    text-shadow: 0 0 5px #fff,0 0 10px #800000;
     z-index: 4;
 
   }
   .explains{
-    position: fixed;
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50rem;
-    left: calc(50% - 25rem);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+line-height: 0;
+font-weight: 700;
   }
-  .explains > span {
-    z-index: 12;
-    flex-wrap: nowrap;
-    position: fixed;
-  }
-  .CoinLogo_explain{
-    position: fixed;
-  width: 50rem;
-  top: calc(50vh - 25rem);
-  left: calc(50vw - 25rem);
-    }
-    .image_explain{
-      width: 17rem;
-      border-radius: 50%;
-      top: 1rem;
-      left: calc(50% - 8.5rem);
-      position: fixed;
-      z-index: 12;
-    }
-    .name_explain{
-      top: 10rem;
-      font-size: 5rem;
-      color:#fbc12d;
-      text-shadow: 0 0 7px #000;
-      left: calc(50% - 15rem);
-      position: fixed;
-      z-index: 12;
-    }
   .symbol {
-    position: fixed;
-    z-index: 12;
-    color:#800000;
-    text-shadow: 0 0 7px #fff;
-    font-size: 4rem;
-    top: 14rem;
-    left: calc(50% - 10rem);
+    color:#FFDE2E;
+    text-shadow: 0 0 7px #000000,0 0 13px #FFDE2E;
+    font-size: 1rem;
   }
   
   .currentPrice {
-    top: 19rem;
-    font-size: 3.5rem;
-    color:#800000;
-    text-shadow: 0 0 7px #fff;
-    left: calc(50% - 18rem);
-    position: fixed;
-    z-index: 12;
-    font-weight: 700;
+    color:#FFDE2E;
+    text-shadow: 0 0 7px #000000,0 0 13px #FFDE2E;
+    font-size: 1rem;
   }
   
   .greenPriceChange,
   .redPriceChange {
-    top: 24rem;
-    font-size:3rem;
-    color:#800000;
+    font-size:1rem;
     text-shadow: 0 0 7px #000;
-    left: calc(50% - 15rem);
-    position: fixed;
-    z-index: 12;
     font-weight: 700;
 }
   
@@ -113,36 +79,13 @@ z-index: 2;
   }
   
   .marketCap{
-    top: 30rem;
-    font-size: 1.5rem;
-    color:#800000;
-    text-shadow: 0 0 7px #fff,0 0 10px #000;
-    left: calc(50% - 10rem);
-    position: fixed;
-    z-index: 12;
-    font-weight: 700;
+    color:#FFDE2E;
+    text-shadow: 0 0 7px #000000,0 0 13px #FFDE2E;
+    font-size: 1rem;
   }
-  .closeButton{
-    position: fixed;
-    z-index: 13;
-    bottom: 3rem;
-    border: none;
-    font-size: 1.5rem;
-    font-weight: 900;
-    background: none;
-    width: 150px;
-    box-shadow:inset 0 0 5px #dbc12d, 0 0 5px #fbc12d , 0 0 10px #fbc12d ,00 0 20px #fbc12d;
-    border-radius: 50px;
-    color: #800000;
-  }
-  .closeButton:hover{
-    background: #dbc12d;
-    transition: .5s;
-    cursor: pointer;
-  }
-  .closeButton:active ~ span {
-display: none;
-  }
+
+
+
 @media (width<900px){
     .container{
         background: #ffffff3f;

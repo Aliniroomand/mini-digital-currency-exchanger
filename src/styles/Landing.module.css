@@ -29,6 +29,9 @@
     border: none;
 transition: 1s;
 }
+.searchBox::placeholder{
+    color: #181818;
+}
 .searchBox:focus{
 width: 500px;
 left: calc(50% - 250px);
@@ -85,15 +88,12 @@ box-shadow: -3px 3px 10px #000e2488,inset 3px -3px 10px #000e2488,3px -3px 10px 
         
     }
     .searchBox{
-        width: calc( 100svw - 100px);
-    }
-    .container{
-        width: calc( 100svw - 100px);
-
+        width: 200px;
+        left: calc(50% - 100px);
     }
     .searchError{
         font-size: 2rem;
-        background-color:#020100a1 ;
+        color:#ff8000 ;
         border-radius: 50px;
         
     }
