@@ -1,0 +1,95 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+}
+.coin1,
+.coin2,
+.coin3,
+.coin4,
+.coin5,.coin12,
+.coin22,
+.coin32,
+.coin42,
+.coin52{
+    position: fixed;
+    top: 0;
+    z-index: 0;
+    width: 50px;
+    filter: drop-shadow(0 0 3px #fff) ;
+}
+.coin1{
+    top: 0;
+    animation: rain 5s infinite;
+    right: 35%;
+}
+.coin2{
+    top: 50%;
+    right: 20%;
+    animation: rain 6s infinite;
+
+}.coin3{
+    top: 20%;
+    right: 40%;
+    animation: rain 7s infinite;
+
+}.coin4{
+    top: 0;
+    right: 60%;
+    animation: rain 5s infinite;
+
+}.coin5{
+    top: 10%;
+    right: 80%;
+    animation: rain 9s infinite;
+
+}
+.coin12{
+    top:90%;
+    left: 50%;
+    animation: rain 3s infinite;
+
+}
+.coin22{
+    top: 30%;
+    left: 50%;
+    animation: rain 9s infinite;
+    transform: translateY(0vh);
+
+
+}.coin32{
+    top: 80%;
+    left: 30%;
+    animation: rain 3s infinite;
+
+}.coin42{
+    top: 90%;
+    left: 40%;
+    animation: rain 10s infinite;
+
+}.coin52{
+    top: 60%;
+    left: 80%;
+    animation: rain 8s infinite;
+
+}
+
+ @keyframes rain{
+    0%{
+        transform: translateY(-100vh);
+    }
+    25%{
+        transform: translateY(0vh);
+    }
+    50%{
+        transform: translateY(100vh);
+    }
+    75%{
+        transform: translateY(0vh);
+    }
+    100%{
+        transform: translateY(100vh);
+
+    }
+}

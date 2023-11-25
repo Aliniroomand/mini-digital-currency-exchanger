@@ -1,0 +1,48 @@
+.main_coin_bg{
+    position: fixed;
+    bottom: 0;
+    width: 70rem;
+bottom:-10rem; 
+    left: calc(50% - 35rem);
+    z-index: 2;
+    animation: rotate 1s infinite;
+
+}
+@media (width <= 1024px){
+    .main_coin_bg{
+    width: 60rem;
+    left: calc(50% - 30rem);
+    }
+}
+@media (width <= 768px){
+    .main_coin_bg{
+        width:30rem ;
+        bottom: -5%;
+        left: calc(50% - 15rem);
+    }
+}
+@media (width <= 320px){
+    .main_coin_bg{
+        width: 22rem;
+        left: calc(50% - 12rem);
+    }
+
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotateZ(1deg);
+    }
+    25% {
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(-1deg);
+    }
+    75%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+            transform: rotateZ(1deg);
+    }
+}

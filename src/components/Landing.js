@@ -20,7 +20,6 @@ const Landing = () => {
     useEffect (()=>{
         const fetchAPI=async ()=>{
         const data = await getCoin();
-            console.log(data);
             setCoins(data);
         }
         fetchAPI()
@@ -31,7 +30,6 @@ const Landing = () => {
      }
 
      const searchedCoins = coins.filter(coin=>coin.name.toLowerCase().includes(search.toLowerCase()))
-     console.log(searchedCoins);
     return (
         <div className={styles.mainContainer}>
             <input className={styles.searchBox} type='text' placeholder='search' value={search} onChange={searchHandler}/>
